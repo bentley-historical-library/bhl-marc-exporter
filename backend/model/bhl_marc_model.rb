@@ -1,6 +1,7 @@
 # a quick hack to allow full marcxml export
 # this is a nearly exact clone of the marc21.rb file in the backend/app/exporters/models folder
 # all that is changed is the .extract_note_text method's include_unpublished argument is set to true.
+# (see somewhere around line # 491)
 
 class MARCModel < ASpaceExport::ExportModel
   model_for :marc21
